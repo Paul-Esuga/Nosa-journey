@@ -23,9 +23,44 @@
         font-size: larger;
       }
 
-      div {
+      div.twitter {
         padding: 10px;
         color: teal;
+      }
+
+      .amazon {
+        color: rgb(0, 113, 113);
+      }
+
+      .nike {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .stock {
+        color: rgb(0, 118, 0);
+      }
+
+      button.cart {
+        background-color: rgb(255, 216, 20);
+        width: 115px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+
+      button.buy {
+        background-color: rgb(255, 164, 28);
+        width: 115px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        margin-right: 8px;
       }
     </style>
   </head>
@@ -39,7 +74,7 @@
     <p>He aspires to be the greatets entertainer there ever was</p>
     <h2>Why Him</h2>
     <p>The real question we should be asking is why not him</p>
-    <div>
+    <div class="twitter">
       <p class="username">@sugarfallsss</p>
       <p>The Esuga Bomb</p>
     </div>
@@ -58,7 +93,23 @@
     <div>
       <a href="about.html">About ME </a>
       <a href="images/esuga.jpg" download>My Photo</a>
-      <p></p>
+      <div>
+        <button>Click</button>
+        <button>Esuga</button>
+        <button>Beans</button>
+      </div>
+    </div>
+    <br />
+    <div>
+      <a href="https://www.amazon.com/" target="_blank" class="amazon"
+        >Back to Amazon</a
+      >
+      <p class="nike">Nike Black running Shoes</p>
+      <p class="stock">$39 - in stock</p>
+      <p>Free delivery tomorrow</p>
+      <br />
+      <button class="cart">Add to Cart</button>
+      <button class="buy">Buy Now</button>
     </div>
   </body>
 </html>
