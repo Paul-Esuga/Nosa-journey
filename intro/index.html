@@ -166,7 +166,7 @@
     </style>
   </head>
   <body>
-    <img src="images/esuga.jpg" alt="esuga" />
+    <img src="../images/esuga.jpg" alt="esuga" />
     <!-- /*only one h1 should be used*/ -->
     <h1>Esuga's Wild World</h1>
     <h2>The essence of Esuga</h2>
@@ -251,8 +251,87 @@
         <button class="text-button">Buy</button>
       </div>
     </div>
+    <div class="img-search">
+      <div class="linkedin">
+        <p class="email">Email</p>
+        <input type="text" class="link-email" />
+        <p class="click">
+          By clicking Agree & Join, you agree to the Privacy Policy.
+        </p>
+        <button class="agree">Agree & Join</button>
+      </div>
+      <div class="twitter">
+        <img src="cat.jpeg" alt="cat pic" class="dp" />
+        <input type="text" placeholder="What's happening?" class="tweet-bar" />
+        <button class="tweets">Tweet</button>
+      </div>
+    </div>
   </body>
   <style>
+    .twitter {
+      width: 400px;
+      line-height: 30px;
+    }
+    .dp {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 15px;
+      vertical-align: middle;
+    }
+    .tweet-bar {
+      color: rgb(83, 83, 83);
+      text-align: left;
+      margin-left: 2px;
+      width: 200px;
+      border: none;
+      vertical-align: middle;
+    }
+    .tweets {
+      color: white;
+      background-color: rgb(0, 138, 216);
+      width: 62px;
+      height: 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 12px;
+      border: none;
+      padding: 6px;
+      vertical-align: middle;
+    }
+    .img-search {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 40px;
+    }
+    .linkedin {
+      color: rgb(70, 70, 70);
+      width: 260px;
+      margin-bottom: 40px;
+    }
+    .email {
+      font-size: 11px;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+    .link-email {
+      width: 250px;
+      height: 20px;
+      border-radius: 5px;
+      border-style: solid;
+    }
+    .click {
+      font-size: 10px;
+    }
+    .agree {
+      background-color: rgb(83, 80, 247);
+      color: white;
+      width: 260px;
+      padding: 10px;
+      border-radius: 120px;
+      border: none;
+      cursor: pointer;
+    }
+
     .mac-info {
       text-align: center;
       margin-bottom: 0;
