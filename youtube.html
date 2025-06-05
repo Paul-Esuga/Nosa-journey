@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock Youtube site</title>
     <style>
-      .thumbnaik {
-        width: 300px;
+      .thumbnail {
+        /* width: 300px; */
         /* object-fit: cover;
         object-position: left; */
         display: block;
+        height: 170px;
       }
 
       .search-bar {
         font-size: 20px;
         margin-left: 12px;
+        display: block;
+        margin-bottom: 20px;
       }
 
       .video-title {
         width: 300px;
+        font-weight: bold;
+      }
+
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
       }
 
       /* .video-author,
@@ -30,13 +41,25 @@
   <body>
     <input type="text" placeholder="Search" class="search-bar" />
 
-    <img
-      src="thumbnails/tifo.jpeg"
-      alt="tifo animation of steph curry"
-      class="thumbnail"
-    />
-    <p class="video-title">The Ultimate Point Guard</p>
-    <p class="video-author">The Athletic</p>
-    <p class="video-stats">3.4m views &#183; 6 months ago</p>
+    <div class="video-preview">
+      <img
+        src="thumbnails/tifo.jpeg"
+        alt="tifo animation of steph curry"
+        class="thumbnail"
+      />
+      <p class="video-title">The Ultimate Point Guard</p>
+      <p class="video-author">The Athletic</p>
+      <p class="video-stats">3.4m views &#183; 6 months ago</p>
+    </div>
+    <div class="video-preview">
+      <img
+        src="thumbnails/halfpast.jpeg"
+        alt="halfpast animation of kawhi leonard"
+        class="thumbnail"
+      />
+      <p class="video-title">The Making of a Miracle</p>
+      <p class="video-author">Half P*st Noon</p>
+      <p class="video-stats">19m views &#183; 4 years ago ago</p>
+    </div>
   </body>
 </html>

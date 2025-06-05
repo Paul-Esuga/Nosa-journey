@@ -26,10 +26,10 @@
         font-size: larger;
       }
 
-      div.twitter {
+      /* div.twitter {
         padding: 10px;
         color: teal;
-      }
+      } */
 
       .amazon {
         color: rgb(0, 113, 113);
@@ -168,17 +168,27 @@
       }
       .twitter {
         width: 400px;
-        line-height: 30px;
+        line-height: 40px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+        border-radius: 4px;
+        border: none;
+        padding: 5px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        width: 340px;
       }
       .dp {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: 20px;
         vertical-align: middle;
+        margin-left: 3px;
       }
       .tweet-bar {
         color: rgb(83, 83, 83);
+        background-color: beige;
         text-align: left;
         margin-left: 2px;
         width: 200px;
@@ -423,11 +433,62 @@
         <button class="schedule-but">Schedule for later</button>
       </div>
     </div>
+    <div class="div-exercise">
+      <div class="card">
+        <img src="../images/lulu.jpg" alt="Angry rhino" class="card-dp" />
+        <p class="card-title">Oliver</p>
+        <p class="connections">2 mutual friends</p>
+        <button class="add-but">Add Friend</button>
+      </div>
+    </div>
   </body>
   <style>
     /* .css-display-ex {
       font-family: Arial, Helvetica, sans-serif;
     } */
+    .card {
+      font-family: Arial, Helvetica, sans-serif;
+      border: none;
+      border-radius: 4px;
+      width: 150px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      margin-left: 6px;
+    }
+    .card-dp {
+      width: 150px;
+      height: 200px;
+      border-radius: 0;
+      margin-bottom: 6px;
+      /* height: 250px; */
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 14px;
+      /* margin-top: 10px; */
+      margin-bottom: 2px;
+      margin-left: 4px;
+    }
+
+    .connections {
+      color: gray;
+      font-size: 11px;
+      margin-bottom: 10px;
+      margin-top: 2px;
+      margin-left: 4px;
+    }
+
+    .add-but {
+      padding: 8px;
+      color: white;
+      background-color: rgb(78, 88, 230);
+      border: none;
+      font-size: 12px;
+      border-radius: 4px;
+      width: 80px;
+      margin-bottom: 6px;
+      margin-left: 5px;
+    }
 
     .uber-request {
       font-size: 25px;
