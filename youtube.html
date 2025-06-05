@@ -9,20 +9,34 @@
         width: 300px;
         /* object-fit: cover;
         object-position: left; */
+        display: block;
       }
 
       .search-bar {
         font-size: 20px;
         margin-left: 12px;
       }
+
+      .video-title {
+        width: 300px;
+      }
+
+      /* .video-author,
+      .video-stats {
+        display: inline-block;
+      } */
     </style>
   </head>
   <body>
+    <input type="text" placeholder="Search" class="search-bar" />
+
     <img
       src="thumbnails/tifo.jpeg"
       alt="tifo animation of steph curry"
       class="thumbnail"
     />
-    <input type="text" placeholder="Search" class="search-bar" />
+    <p class="video-title">The Ultimate Point Guard</p>
+    <p class="video-author">The Athletic</p>
+    <p class="video-stats">3.4m views &#183; 6 months ago</p>
   </body>
 </html>
