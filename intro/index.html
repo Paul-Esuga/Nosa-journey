@@ -584,51 +584,58 @@
         <button class="add-but">Add Friend</button>
       </div>
     </div>
-    <div class="nested-layout-ex">
-      <div class="profiles">
-        <div class="card">
-          <img src="../images/musty.jpg" alt="Angry rhino" class="card-dp" />
-          <p class="card-title">Mufasa</p>
-          <div class="mutual">
-            <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
-            <p class="connections">2 mutual friends</p>
-          </div>
-          <div class="add-but-div">
-            <button class="add-but">Add Friend</button>
-          </div>
-        </div>
-      </div>
-      <div class="profiles">
-        <div class="card">
-          <img src="../images/maji.jpg" alt="Angry rhino" class="card-dp" />
-          <p class="card-title">Sugarfalls</p>
-          <div class="mutual">
-            <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
-            <p class="connections">3 mutual friends</p>
-          </div>
-          <div class="add-but-div">
-            <button class="add-but">Add Friend</button>
+    <div class="css-grid-ex">
+      <div class="nested-layout-ex">
+        <div class="profiles">
+          <div class="card">
+            <img src="../images/musty.jpg" alt="Angry rhino" class="card-dp" />
+            <p class="card-title">Mufasa</p>
+            <div class="mutual">
+              <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
+              <p class="connections">2 mutual friends</p>
+            </div>
+            <div class="add-but-div">
+              <button class="add-but">Add Friend</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="profiles">
-        <div class="card">
-          <img src="../images/lulu.jpg" alt="Angry rhino" class="card-dp" />
-          <p class="card-title">Lulu Lemon</p>
-          <div class="mutual">
-            <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
-            <p class="connections">4 mutual friends</p>
+        <div class="profiles">
+          <div class="card">
+            <img src="../images/maji.jpg" alt="Angry rhino" class="card-dp" />
+            <p class="card-title">Sugarfalls</p>
+            <div class="mutual">
+              <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
+              <p class="connections">3 mutual friends</p>
+            </div>
+            <div class="add-but-div">
+              <button class="add-but">Add Friend</button>
+            </div>
           </div>
-          <div class="add-but-div">
-            <button class="add-but">Add Friend</button>
+        </div>
+        <div class="profiles">
+          <div class="card">
+            <img src="../images/lulu.jpg" alt="Angry rhino" class="card-dp" />
+            <p class="card-title">Lulu Lemon</p>
+            <div class="mutual">
+              <img src="../images/rhino.jpg" alt="" class="mutual-pfp" />
+              <p class="connections">4 mutual friends</p>
+            </div>
+            <div class="add-but-div">
+              <button class="add-but">Add Friend</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
   <style>
-    .profiles {
-      display: inline-block;
+    .css-grid-ex {
+      width: 500px;
+    }
+    .nested-layout-ex {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
     }
     .mutual {
       margin-bottom: 12px;

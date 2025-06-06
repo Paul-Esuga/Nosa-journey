@@ -15,7 +15,6 @@
         /* width: 300px; */
         /* object-fit: cover;
         object-position: left; */
-        display: block;
         height: 170px;
         width: 100%;
       }
@@ -45,24 +44,16 @@
         margin-bottom: 4px;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-        margin-bottom: 10px;
-      }
-
-      .channel-picture {
+      /* .channel-picture {
         display: inline-block;
         width: 50px;
         vertical-align: top;
-      }
+      } */
 
-      .video-info {
+      /* .video-info {
         display: inline-block;
         width: 200px;
-      }
+      } */
 
       .profile-picture {
         width: 90%;
@@ -78,6 +69,17 @@
         margin-bottom: 0;
       }
 
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
       /* .video-author,
       .video-stats {
         display: inline-block;
@@ -87,50 +89,150 @@
   <body>
     <input type="text" placeholder="Search" class="search-bar" />
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img
-          src="thumbnails/tifo.jpeg"
-          alt="tifo animation of steph curry"
-          class="thumbnail"
-        />
-      </div>
-      <div>
-        <div class="channel-picture">
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
           <img
-            src="thumbnails/tifopfp.png"
-            alt="tifo pfp"
-            class="profile-picture"
+            src="thumbnails/tifo.jpeg"
+            alt="tifo animation of steph curry"
+            class="thumbnail"
           />
         </div>
-        <div class="video-info">
-          <p class="video-title">The Ultimate Point Guard</p>
-          <p class="video-author">The Athletic</p>
-          <p class="video-stats">3.4m views &#183; 6 months ago</p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/tifopfp.png"
+              alt="tifo pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The Ultimate Point Guard: story of the great baby face assassin
+            </p>
+            <p class="video-author">The Athletic</p>
+            <p class="video-stats">3.4m views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img
-          src="thumbnails/halfpast.jpeg"
-          alt="halfpast animation of kawhi leonard"
-          class="thumbnail"
-        />
-      </div>
-      <div>
-        <div class="channel-picture">
+      <div class="video-preview">
+        <div class="thumbnail-row">
           <img
-            src="thumbnails/hpnpfp.png"
-            alt="tifo pfp"
-            class="profile-picture"
+            src="thumbnails/halfpast.jpeg"
+            alt="halfpast animation of kawhi leonard"
+            class="thumbnail"
           />
         </div>
-        <div class="video-info">
-          <p class="video-title">The Making of a Miracle</p>
-          <p class="video-author">Half P*st Noon</p>
-          <p class="video-stats">19m views &#183; 4 years ago ago</p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/hpnpfp.png"
+              alt="tifo pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">The Making of a Miracle</p>
+            <p class="video-author">Half P*st Noon</p>
+            <p class="video-stats">19m views &#183; 4 years ago ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="thumbnails/deep3.jpeg"
+            alt="tifo animation of steph curry"
+            class="thumbnail"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/td3pfp.jpeg"
+              alt="td3 pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Ranking the top 100 players in the NBA</p>
+            <p class="video-author">The Deep 3</p>
+            <p class="video-stats">50K views &#183; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="thumbnails/enjoy-ball.jpeg"
+            alt="halfpast animation of kawhi leonard"
+            class="thumbnail"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/ebballpfp.png"
+              alt="tifo pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Another Sporcle game??</p>
+            <p class="video-author">Enjoy Basketball</p>
+            <p class="video-stats">10.3K views &#183; 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="thumbnails/nerd-sesh.jpeg"
+            alt="tifo animation of steph curry"
+            class="thumbnail"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/nspfp.jpeg"
+              alt="nerd sesh pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Game 1 Reaction</p>
+            <p class="video-author">Nerd Sesh</p>
+            <p class="video-stats">4k views &#183; 5 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            src="thumbnails/pas.jpeg"
+            alt="pick a side pod"
+            class="thumbnail"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              src="thumbnails/paspfp.jpeg"
+              alt="pas pfp"
+              class="profile-picture"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Pick 3 Cut 5: NBA forwards Edition</p>
+            <p class="video-author">Pick a Side Pod</p>
+            <p class="video-stats">80K views &#183; 3 weeks ago</p>
+          </div>
         </div>
       </div>
     </div>
